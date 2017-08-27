@@ -1,0 +1,39 @@
+<div id="resultScreen" ng-controller="resultScreenController" ng-init="initialize()">
+    <link rel="stylesheet" href="./resultScreen/result.css">
+    <!-- <div class="post" ng-repeat="post in voteResults.posts">
+        <span ng-bind="post.name"></span>
+        <div class="candidate" ng-repeat="candidate in post.candidates">
+            <span ng-bind="candidate.name"></span>
+            <span ng-bind="candidate.count"></span>
+        </div>
+    </div> -->
+    <div class="titleX">
+        {{election.institution}}
+    </div>
+    <ul class="collection">
+        <li class="collection-item avatar">
+            <div class="postname">General</div>
+            <div class="title">
+                Turnout: {{voteResults.voterCount}}
+            </div>
+        </li>
+        <li class="collection-item avatar" ng-repeat="post in voteResults.posts">
+          <!-- <img src="images/yuna.jpg" alt="" class="circle"> -->
+          <!-- <span class="title">"candidate.name"</span> -->
+          <!-- <p><span ng-bind="candidate.count"></span></p> -->
+          <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+          <div class="post" >
+              <div class="postname" ng-bind="post.name"></div>
+              <div class="candidate" ng-repeat="candidate in post.candidates">
+                  <span class="title" ng-bind="candidate.name"></span>
+                  <span class="colonoscopy">:</span>
+                  <span ng-bind="candidate.count"></span>
+              </div>
+          </div>
+
+
+        </li>
+
+    </ul>
+
+</div>

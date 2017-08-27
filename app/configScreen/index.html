@@ -1,0 +1,18 @@
+<div id="configScreen" ng-controller="configScreenController" ng-init="showDialog()">
+
+    <div id="controlPanel">
+        <ul id="slide-out" class="side-nav fixed">
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+    <div id="configArea">
+        <div class="post" ng-repeat="post in election.posts">
+            <div ng-bind="post.name"></div>
+            <div class="candidate" ng-repeat="candidate in post.candidates">
+                <div ng-bind="candidate.name"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,138 @@
+@text-light:    #ffffff;
+@background:    #232323;
+@highlight:     #26a69a;
+@background-dark:#0a0b0c;
+
+@primary: #1A1A1A;
+@p-2: darken(@primary, 10%);
+@p-1: darken(@primary, 5%);
+@p0: @primary;
+@p1: lighten(@primary, 5%);
+@p2: lighten(@primary, 10%);
+
+@secondary: #ff5722;
+@s-2: darken(@secondary, 10%);
+@s-1: darken(@secondary, 5%);
+@s0: @secondary;
+@s1: lighten(@secondary, 5%);
+@s2: lighten(@secondary, 10%);
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@font-face{font-family:'Gotham-Book';src:url("../Gotham-Book.otf") format("opentype");}
+
+body {
+    height: 100%;
+    display: initial;
+    // background-color: @p0;
+}
+
+.center-with-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#launchScreen {
+    height: 100%;
+    #bannerPanel {
+        background-color: @s0;
+        // convert heights to be relative
+        height: 90%;
+        width: 100%;
+        position: fixed;
+        .center-with-flex;
+        .pollGraphic {
+            color: #ffffff;
+            font-size: 10em;
+        }
+    }
+    #launchPanel {
+        background-color: @p0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        >.btn {
+            background-color: transparent !important;
+            flex: 1;
+            height: 100%;
+        }
+    }
+}
+
+#voteScreen {
+    font-family: 'Gotham-Book', Helvetica, arial, sans-serif;
+    height: 100%;
+    display: initial;
+    background-color: #eeeeee;
+    #infobar {
+        padding: 2em;
+        height: 15%;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        .title {
+            font-size: xx-large;
+        }
+    }
+    .listPanelTemplate() {
+        // height: 70%;
+        width: 100%;
+        padding: 0 4em 0 4em;
+        // TODO: Fix heights
+        top: 15%;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        .candidateCard {
+            width: 400px;
+            height: 200px;
+            margin: 1em;
+            padding: 1em;
+            // border: 1px solid #000;
+            .center-with-flex;
+            .picture {
+                height: 100%;
+                width: 40%;
+                .center-with-flex;
+            }
+            .content {
+                height: 100%;
+                width: 60%;
+                .center-with-flex;
+            }
+        }
+    }
+    #candidateListPanel {
+        .listPanelTemplate;
+    }
+    #finalScreen {
+        .finalSelectionPanel {
+            .listPanelTemplate;
+            .choiceContainer {
+                text-align: center;
+            }
+            width: 80%;
+        }
+        .submitButton {
+            position: absolute;
+            width: 20%;
+            height: 13%;
+            top: 40%;
+            right: 3%;
+            background-color: #06886C;
+            color: #fff;
+            .center-with-flex;
+        }
+    }
+    #postNavigationPanel {
+        height: 15%;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+    }
+}

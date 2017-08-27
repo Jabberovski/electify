@@ -1,0 +1,49 @@
+{
+    "election": {
+        "institution":"Institution Name",
+        "posts": [
+            {
+                "name": "Post-A",
+                "candidates": [
+                    {
+                        "name": "Candidate1",
+                        "image":"test-data/pictures/A1.jpg"
+                    },
+                    {
+                        "name": "Candidate2",
+                        "image":"test-data/pictures/A2.jpg"
+                    },
+                    {
+                        "name": "Candidate3",
+                        "image":"test-data/pictures/A3.jpg"
+                    },
+                    {
+                        "name": "Candidate4",
+                        "image":"test-data/pictures/A4.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Post-B",
+                "candidates": [
+                    {
+                        "name": "Candidate1",
+                        "image":"test-data/pictures/B1.jpg"
+                    },
+                    {
+                        "name": "Candidate2",
+                        "image":"test-data/pictures/B2.jpg"
+                    },
+                    {
+                        "name": "Candidate3",
+                        "image":"test-data/pictures/B3.jpg"
+                    },
+                    {
+                        "name": "Candidate4",
+                        "image":"test-data/pictures/B4.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

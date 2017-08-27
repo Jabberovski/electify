@@ -1,0 +1,21 @@
+@font-face{font-family:'Gotham-Book';src:url("./../assets/Gotham-Book.otf") format("opentype");}
+
+* {
+    font-family: 'Gotham-Book', sans-serif;
+    /*background-color: #06886C;*/
+
+}
+.postname{
+    /*font-size: 25px;*/
+    font-weight: bold;
+}
+.candidate{
+    padding-top: 10px;
+}
+.titleX{
+    padding-top: 35px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gotham-Book', sans-serif;
+
+}

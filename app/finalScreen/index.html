@@ -1,0 +1,26 @@
+<div id="finalScreen" ng-controller="finalScreenController">
+    <link rel="stylesheet" href="./final.css">
+    <div id="launchPanel">
+
+        <div id="thank">
+            Thank You. Your Vote Has Been Recorded.
+        </div>
+        <div class="checkmark">
+            <div class="checkmark-circle">
+              <div class="background"></div>
+              <div class="checkmark draw"></div>
+              <!--  Code courtesy of https://codepen.io/drewbkoch/pen/ogyXEK, thanks mate xD-->
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script>
+        Mousetrap.bind('ctrl+shift+l', function() {
+             console.log('control shift l, reset voter');
+            // call the initialize() fx here to relaunch the app or whatever, once
+            // it's been relinked to voteScreen.
+         });
+    </script>
+</div>
